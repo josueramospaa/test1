@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Player V4 Web Pages</title>
+</head>
+<body>
+
+<a href="/index_main.html" style="font-family: arial; font-size: 8px;">HOME</a>
+<div align="center">
+<a href="/index.html" style="font-size: 9px; font-family: Arial;">Player V4 Practice I</a> 
+<center style="font-size: 13px; font-family: Arial;">TEST VIDEO PLAYER OOYALA COMPANY</center>
+<center style="font-size: 13px; font-family: Arial;">PRACTICE I</center>
+<div align="center">
+<HR>
+<script src="//player.ooyala.com/core/79da10fbfdd34ec4a60eb52556a5af02"></script>
+<!-- Video 1 -->
+<div id='Video1' style='width:540px;'></div>
+<button id="play" onclick="vid1.play()" style='width:50px; height:20px'>Play</button>
+<button id="pause" onclick="vid1.pause()" style='width:50px; height:20px'>Pause</button>
+<select onchange="vid1.setVolume(parseFloat(this.value))" style='width:50px; height:20px'>
+        <option value="1">VOL6</option>
+        <option value=".5">VOL5</option>
+        <option value=".4">VOL4</option>
+        <option value=".3">VOL3</option>
+        <option value=".2">VOL2</option>
+        <option value=".1">VOL1</option>
+        <option value=".0">MUTE</option>
+    </select>
+    
+<!-- Video 2-->
+<div align="center">
+<div id='Video2' style='width:540px;'></div>
+<button id="play" onclick="vid2.play()" style='width:50px; height:20px'>Play</button>
+<button id="pause" onclick="vid2.pause()" style='width:50px; height:20px'>Pause</button>
+<select onchange="vid2.setVolume(parseFloat(this.value))" style='width:50px; height:20px'>
+        <option value="1">VOL6</option>
+        <option value=".5">VOL5</option>
+        <option value=".4">VOL4</option>
+        <option value=".3">VOL3</option>
+        <option value=".2">VOL2</option>
+        <option value=".1">VOL1</option>
+        <option value=".0">MUTE</option>
+    </select>
+ <script src="/player.js"></script>
+</body>
+
+</html>
